@@ -8,6 +8,5 @@ window.addEventListener("load", function(){
     const sliderLength = sliderItems.length;
     sliderMain.style.width = `${sliderLength * sliderItemsWidth} px`
     const sliderItemsWidth = sliderItems[0].offsetWidth;
-    
-
 })
+console.log('xin chao')

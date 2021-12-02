@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="assets/front/themify-icons-font (1)/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="app.js">
     <title>Cửa hàng thực phẩm đông lạnh Vạn Tâm An</title>
@@ -12,15 +14,15 @@
 <body>
     <div id="main">
         <div id="header-top">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="row">
-                    <div class="header-top-body">
+                    <div class="col header-top-body">
                         <div class="header-top-adress">
                             <i class="ti-location-pin text-color-white"></i>
                             <p>
                             <span class="text-color-white">Địa chỉ:</span> số 42 đường số 1, phường Tân Phú, quận 7, Tp.Hồ Chí Minh</p>
                         </div>
-                        <div class="header-top-time">
+                        <div class="col header-top-time">
                             <i class="ti-alarm-clock text-color-white"></i>
                             <p>
                             <span class="text-color-white">Giờ làm việc</span> <strong>7h - 20h hàng ngày</strong>
@@ -37,8 +39,14 @@
                     <i class="nav-icon-home ti-home"></i>
                 </a>
                 </li>
-                <li><a href="price.html">Bảng giá</a></li>
-                <li><a href="#footer">Liên hệ</a></li>
+                <li><a href="price.html">
+                    Bảng giá
+                    <i class="ti-money"></i>
+                </a></li>
+                <li><a href="#footer">
+                    Liên hệ
+                    <div class="ti-email-icon"><i class="ti-email"></i></div>
+                </a></li>
                 <li><a href="">
                     Danh mục
                     <i class="nav-icon ti-angle-down"></i>
@@ -81,23 +89,23 @@
                 <p class="section-title">Với Chúng tôi chất lượng, giá cả, an toàn vệ sinh thực phẩm luôn luôn tốt nhất.</p>
             </div>
             <div class="product-wholesale">
-                <div class="grid .product-wholesale-body">
+                <div class="grid wide product-wholesale-body">
                     <div class="row">
-                        <div class="col-three">
+                        <div class="l-4 m-6 c-12">
                             <div class="product-wholesale-item">
                                 <img src="./assets/image/heo-9893.png" alt="" class="product-wholesale-img">
                                 <h3 class="product-wholesale-name">THỊT HEO ĐÔNG LẠNH</h3>
                                 <a href="#pork"><button class="btn-more">Xem thêm</button></a>
                             </div>
                         </div>
-                        <div class="col-three">
+                        <div class="l-4 m-6 c-12">
                             <div class="product-wholesale-item">
                                 <img src="./assets/image/ga-4145.png" alt="" class="product-wholesale-img">
                                 <h3 class="product-wholesale-name">THỊT GÀ ĐÔNG LẠNH</h3>
                                 <a href="#chicken"><button class="btn-more">Xem thêm</button></a>
                             </div>
                         </div>
-                        <div class="col-three">
+                        <div class="l-4 m-6 c-12">
                             <div class="product-wholesale-item">
                                 <img src="./assets/image/bo-3748.png" alt="" class="product-wholesale-img">
                                 <h3 class="product-wholesale-name">THỊT BÒ ĐÔNG LẠNH</h3>
@@ -115,7 +123,7 @@
                 </div>
                 <div id="pork" class="row">
                     <div class="content-section">
-                        <div class="col-four content-item">
+                        <div class="col l-3 m-6 c-12 content-item">
                                 <a href="product.html" class="meal-item"> 
                                     <img src="./assets/image/baroi.jpg" alt="">
                                     <div class="meal_body">
@@ -139,7 +147,7 @@
                                     </div>
                                 </a>
                         </div>
-                                <div class="col-four content-item">
+                                <div class="col l-3 m-6 c-12 content-item">
                                     <a href="product.html" class="meal-item"> 
                                         <img src="./assets/image/cotlet.png" alt="">
                                         <div class="meal_body">
@@ -163,7 +171,7 @@
                                         </div>
                                     </a>
                                 </div>  
-                                <div class="col-four content-item">
+                                <div class="col l-3 m-6 c-12 content-item">
                                     <a href="product.html" class="meal-item">
                                         <img src="./assets/image/bapgio.png" alt="">
                                         <div class="meal_body">
@@ -187,7 +195,7 @@
                                         </div>
                                     </a>
                                 </div> 
-                                <div class="col-four content-item">
+                                <div class="col l-3 m-6 c-12 content-item">
                                     <a href="product.html" class="meal-item">
                                         <img src="./assets/image/suonnon.png" alt="">
                                         <div class="meal_body">
@@ -211,7 +219,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-four content-item">
+                                <div class="col l-3 m-6 c-12 content-item">
                                     <a href="product.html" class="meal-item">
                                         <img src="./assets/image/monggio.png" alt="">
                                         <div class="meal_body">
@@ -235,7 +243,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-four content-item">
+                                <div class="col l-3 m-6 c-12 content-item">
                                     <a href="product.html" class="meal-item">
                                         <img src="./assets/image/nacdui.png" alt="">
                                         <div class="meal_body">
@@ -262,28 +270,28 @@
                     </div>
                 </div>
                 <div id="slider">
-                    <i class="ti-angle-left slider-prev"></i>
+                    <i class="ti-angle-left slider-prev hide-on-mobile-tablet"></i>
                     <ul class="slider-dots">
-                        <li class="slider-dot-item active" data-index="0"></li>
-                        <li class="slider-dot-item" data-index="1"></li>
-                        <li class="slider-dot-item" data-index="2"></li>
-                        <li class="slider-dot-item" data-index="3"></li>
-                        <li class="slider-dot-item" data-index="4"></li>
+                        <li class="slider-dot-item active hide-on-mobile-tablet" data-index="0"></li>
+                        <li class="slider-dot-item hide-on-mobile-tablet" data-index="1"></li>
+                        <li class="slider-dot-item hide-on-mobile-tablet" data-index="2"></li>
+                        <li class="slider-dot-item hide-on-mobile-tablet" data-index="3"></li>
+                        <li class="slider-dot-item hide-on-mobile-tablet" data-index="4"></li>
                     </ul>
                     <div class="slider-wapper">
                         <div class="slider-main">
                             <div class="slider-item">
                                 <img src="./assets/image/slider1.pnj.jpg" alt="">
                             </div>
-                            <div class="slider-item">
+                            <div class="slider-item .hide-on-mobile-tablet">
                                 <img src="./assets/image/slider1.pnj.jpg" alt="">
                             </div>
-                            <div class="slider-item">
+                            <div class="slider-item .hide-on-mobile-tablet">
                                 <img src="./assets/image/slider1.pnj.jpg" alt="">
                             </div>
                         </div>
                     </div>
-                    <i class="ti-angle-right slider-next"></i>
+                    <i class="ti-angle-right slider-next hide-on-mobile-tablet"></i>
                 </div>
                 <div class="section-heading">
                     <h2 class="section-name"> Thịt gà</h2>
@@ -291,7 +299,7 @@
                 </div>
                 <div id="chicken" class="row">
                     <div class="content-section">
-                        <div class="col-four content-item">
+                        <div class="col l-3 m-6 c-12 content-item">
                             <a href="product.html" class="meal-item"> 
                                 <img src="./assets/image/duiga.png" alt="">
                                 <div class="meal_body">
@@ -315,7 +323,7 @@
                                 </div>
                             </a>
                         </div>
-                                <div class="col-four content-item">
+                                <div class="col l-3 m-6 c-12 content-item">
                                     <a href="product.html" class="meal-item"> 
                                         <img src="./assets/image/goctu.png" alt="">
                                         <div class="meal_body">
@@ -339,7 +347,7 @@
                                         </div>
                                     </a>
                                 </div>  
-                                <div class="col-four content-item">
+                                <div class="col l-3 m-6 c-12 content-item">
                                     <a href="product.html" class="meal-item"> 
                                         <img src="./assets/image/goctu.png" alt="">
                                         <div class="meal_body">
@@ -372,7 +380,7 @@
                        </div>
                        <div id="other" class="row">
                            <div class="content-section">
-                               <div class="col-four content-item">
+                               <div class="col l-3 m-6 c-12 content-item">
                                    <a href="product.html" class="meal-item"> 
                                        <img src="./assets/image/thitbo.png" alt="">
                                        <div class="meal_body">
@@ -396,7 +404,7 @@
                                        </div>
                                    </a>
                                </div>
-                               <div class="col-four content-item">
+                               <div class="col l-3 m-6 c-12 content-item">
                                    <a href="product.html" class="meal-item"> 
                                                <img src="./assets/image/bachtuoc.png" alt="">
                                                <div class="meal_body">
@@ -420,7 +428,7 @@
                                                </div>
                                    </a>
                                </div>  
-                               <div class="col-four content-item">
+                               <div class="col l-3 m-6 c-12 content-item">
                                    <a href="product.html" class="meal-item"> 
                                                <img src="./assets/image/canuc.png" alt="">
                                                <div class="meal_body">
@@ -444,7 +452,7 @@
                                                </div>
                                    </a>
                                </div>
-                                <div class="col-four content-item">
+                                <div class="col l-3 m-6 c-12 content-item">
                                    <a href="product.html" class="meal-item"> 
                                        <img src="./assets/image/gaaost25.png" alt="">
                                        <div class="meal_body">
@@ -473,28 +481,28 @@
     </div>
 </div>
         <div class="slider-page-facebook">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="row">
-                    <div class="col-three">
+                    <div class="l-4 m-0 c-0">
                         <div class="slider-page-facebook-left"><img src="./assets/image/girl-left.png" alt=""></div>
                     </div>
-                    <div class="col-three">
+                    <div class="l-4 m-12 c-12">
                         <div class="fb-page" data-href="https://www.facebook.com/thucphamdonglanhVanTamAn" data-tabs="timeline" data-width="500" data-height="405" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                             <blockquote cite="https://www.facebook.com/thucphamdonglanhVanTamAn" class="fb-xfbml-parse-ignore">
                             <a href="https://www.facebook.com/thucphamdonglanhVanTamAn">Thực phẩm đông lạnh nhập khẩu Vạn Tâm An</a>
                             </blockquote>
                         </div>
                     </div>
-                    <div class="col-three">
+                    <div class="l-4 m-0 c-0">
                         <div class="slider-page-facebook-right"><img src="./assets/image/girl-right.png" alt=""></div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="footer">
-            <div class="grid wide footer-body">
-                <div class="row">
-                   <div class="col-four">
+            <div class="grid wide">
+                <div class="row footer-body">
+                   <div class="col l-3 m-6 c-12">
                        <h2 class="footer-header">CHĂM SÓC KHÁCH HÀNG</h2>
                        <ul class="footer-list">
                            <div class="footer-item">
@@ -506,7 +514,7 @@
                         
                        </ul>
                    </div>
-                   <div class="col-four">
+                   <div class="col l-3 m-6 c-12">
                     <h2 class="footer-header">LIÊN HỆ</h2>
                     <ul class="footer-list">
                         <div class="footer-item">
@@ -525,7 +533,7 @@
                     
                     </ul>
                 </div>
-                <div class="col-four">
+                <div class="col l-3 m-6 c-12">
                     <h2 class="footer-header">DANH MỤC</h2>
                     <ul class="footer-list">
                         <div class="footer-item">
@@ -542,7 +550,7 @@
                     </div>
                     </ul>
                 </div>
-                <div class="col-four">
+                <div class="col l-3 m-6 c-12">
                     <h2 class="footer-header">MUA HÀNG ONLINE</h2>
                     <ul class="footer-list">
                         <div class="footer-item">
@@ -576,6 +584,7 @@
     </div>
     </div>
     <div id="fb-root"></div>
+    <script>app.js</script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0" nonce="RUELFNrH"></script>
 </body>
 </html>
