@@ -15,6 +15,8 @@ html {
 :root {
     --white-color: #fff5ea;
     --primary-color: #dc3c4d;
+    --height-header-bottom: 79.2px;
+    --height-header-top: 20px;
    
 }
 div[id] {
@@ -23,13 +25,7 @@ div[id] {
 .text-color-white {
     color: white;
 }
-.ti-email-icon {
-    display: inline-block;
-    font-size: 18px;
-    margin-left: 10px;
-    padding-top: 5px;
-    
-}
+
 /* Grid */
 
 /* .grid {
@@ -128,14 +124,115 @@ div[id] {
     padding-left: 10px;
 }
 
-
-
-
 /* End header top */
+/* Header bottom */
+.header-bottom {
+    width: 100%;
+    height: var(--height-header-bottom);
+    position: fixed;
+    top: 20px;
+    background-color: white;
+    z-index: 100;
+}
+.header-bottom-body {
+    display: flex;
+    width: 100%;
+}
+
+.header-bottom-logo-img img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.header-bottom-banner-img img {
+    width: 100%;
+}
+
+.header-bottom-research {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-bottom-rs-body {
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    padding: 15px 22px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.header-bottom-search select {
+    border-style: none;
+}
+
+.header-bottom-search-line {
+    width: 1px;
+    height: 20px;
+    background-color: #808080;
+    margin-left: 5px;
+}
+
+.header-bottom-search-text {
+    display: flex;
+}
+.header-bottom-search-input {
+    border-style: none;
+    padding-left: 20px;
+}
+
+.header-bottom-search-text:focus {
+    border-color: red;
+    border-style: none;
+}
+
+ .header-bottom-search-icon {
+    position: absolute;
+    background-color: red;
+    top: -1px;
+    padding: 16px;
+    right: 0;
+    border-radius: 50%;
+    color: white;
+} 
+
+.header-bottom-contact {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-bottom-contact-body p {
+    float: left;
+}
+
+.header-bottom-contact p {
+    text-align: center;
+}
+
+.header-bottom-contact-from {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.header-bottom-contact-number {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+
+
+
 /* Navigation */
 #header {
     position: fixed;
-    top: 20px;
+    top: calc(var(--height-header-bottom) + var(--height-header-top));
     left: 0;
     right: 0;
     width: 100%;
@@ -145,9 +242,13 @@ div[id] {
     justify-content: space-between;
     z-index: 100;
 }
+#navi {
+    display: flex;
+    justify-content: space-between;
+}
 
 #nav {
-
+    display: block;
 }
 
 #nav li {
@@ -165,6 +266,13 @@ div[id] {
     text-decoration: none;
     line-height: 60px;
     font-size: 1.1rem;
+}
+
+#nav li a i {
+    position: absolute;
+    top: 22px;
+    right: 1px;
+    font-size: 16px;
 }
 
 #nav>li:hover>a {
@@ -217,18 +325,18 @@ div[id] {
     transition: all 0.9s;
 } 
 
-.search-btn i {
-    font-size: 16px;
+.cart-icon i {
     line-height: 60px;
-    padding: 0 26px;
+    padding: 0 10px;
     width: 100%;
     display: block;
-    color: white;
-    font-size: 20px;
-    line-height: 60px;
+    color: var(--white-color);
+    font-size: 25px;
+    background-color:var(--primary-color);
+    
 }
 
-.search-btn i:hover{
+.cart-icon i:hover{
     background-color: var(--white-color);
     color: var(--primary-color);
     display: block;
@@ -726,6 +834,9 @@ div[id] {
 .slider-page-facebook-left img, .slider-page-facebook-right img {
     width: 300px;
 }
+/* End slider page facebook */
+
+
 
 
   

@@ -14,15 +14,15 @@
 <body>
     <div id="main">
         <div id="header-top">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="row">
-                    <div class="header-top-body">
+                    <div class="col header-top-body">
                         <div class="header-top-adress">
                             <i class="ti-location-pin text-color-white"></i>
                             <p>
                             <span class="text-color-white">Địa chỉ:</span> số 42 đường số 1, phường Tân Phú, quận 7, Tp.Hồ Chí Minh</p>
                         </div>
-                        <div class="header-top-time">
+                        <div class="col header-top-time">
                             <i class="ti-alarm-clock text-color-white"></i>
                             <p>
                             <span class="text-color-white">Giờ làm việc</span> <strong>7h - 20h hàng ngày</strong>
@@ -32,47 +32,107 @@
                 </div>
             </div>
         </div>
-        <div id="header">
-            <ul id="nav">
-                <li><a href="#">
-                    Trang chủ
-                    <i class="nav-icon-home ti-home"></i>
-                </a>
-                </li>
-                <li><a href="/price.html">bảng giá</a></li>
-                <li><a href="#footer">Liên hệ</a></li>
-                <li><a href="">
-                    Danh mục
-                    <i class="nav-icon ti-angle-down"></i>
-                   </a>
-                   <ul class="subnav">
-                       <li>
-                        <a href="#pork">Thịt heo</a>
-                        <a href="#chicken">Thịt gà</a>
-                        <a href="#other">Khác</a>
-                       </li>
-                       <li>
-
-                       </li>
-                       <li>
-
-                       </li>
-                   </ul>
-                </li>
-                <li>
-                    <a href="">
-                        Mua hàng                            
-                        <i class="nav-icon ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="https://shopee.vn/vantaman.foods_?categoryId=100629&itemId=8293557582">Shopee</a></li>
-                        <li><a href="https://www.facebook.com/thucphamdonglanhVanTamAn">Facebook</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="search-btn">
-                <i class="ti-search"></i>
+        <div class="header-bottom">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="header-bottom-body">
+                        <div class="col l-2 m-4 c-6">
+                            <div class="header-bottom-logo">
+                                <div class="header-bottom-logo-img">
+                                    <a href="/index.html"><img src="./assets/image/logo.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-0 c-0">
+                            <div class="header-bottom-banner">
+                                <div class="header-bottom-banner-img">
+                                    <img src="./assets/image/banner-vantaman.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-5 m-4 c-6">
+                            <div class="header-bottom-research">
+                                <div class="header-bottom-rs-body">
+                                    <div class="header-bottom-search">
+                                        <select name="" id="">
+                                            <option value="">DANH MỤC</option>
+                                            <option value="">THỊT HEO</option>
+                                            <option value="">THỊT GÀ</option>
+                                            <option value="">KHÁC</option>
+                                        </select>
+                                    </div>
+                                    <div class="header-bottom-search-line"></div>
+                                    <div class="header-bottom-search-text">
+                                        <input type="text" id="keyword" placeholder="Nhập từ khóa cần tìm">
+                                    </div>
+                                    <div class="header-bottom-search-icon">
+                                        <i class="ti-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2 m-4 c-0">
+                            <div class="header-bottom-contact">
+                                <div class="header-bottom-contact-body">
+                                    <p class="header-bottom-contact-from">Hotline/Zalo: </p>
+                                    <p class="header-bottom-contact-number"> 0769 699 046<br>0345 906 498</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div id="header">
+            <div class="grid wide">
+                <div id="navi">
+                    <ul id="nav">
+                        <li class="menu-first"><a href="#">
+                            Trang chủ
+                            <i class="nav-icon-home ti-home"></i>
+                        </a>
+                        </li>
+                        <li><a href="price.html">
+                            Bảng giá
+                    
+                        </a></li>
+                        <li><a href="#footer">
+                            Liên hệ
+                    
+                        </a></li>
+                        <li><a href="">
+                            Danh mục
+                            <i class="nav-icon ti-angle-down"></i>
+                           </a>
+                           <ul class="subnav">
+                               <li>
+                                <a href="#pork">Thịt heo</a>
+                                <a href="#chicken">Thịt gà</a>
+                                <a href="#other">Khác</a>
+                               </li>
+                               <li>
+                               </li>
+                               <li>
+                               </li>
+                           </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                Mua hàng
+                                <i class="nav-icon ti-angle-down"></i>
+                            </a>
+                            <ul class="subnav">
+                                <li><a href="https://shopee.vn/vantaman.foods_?categoryId=100629&itemId=8293557582">Shopee</a></li>
+                                <li><a href="https://www.facebook.com/thucphamdonglanhVanTamAn">Facebook</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="cart-icon i">
+                        <i class="ti-shopping-cart-full"></i>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <div class="main-product">
             <div class="grid">

@@ -5,7 +5,7 @@
     }
     #header {
         position: fixed;
-        top: 0;
+        top: calc(var(--height-header-bottom));;
         left: 0;
         right: 0;
         width: 1023px;
@@ -16,17 +16,17 @@
         z-index: 100;
     }
     #header-top {
+        display: none;
+    }
+
+    .header-bottom {
+        width: 100%;
+        height: var(--height-header-bottom);
         position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 1023px;
-        height: 20px;
-        background-color: #555;
-        display: flex;
-        justify-content: space-between;
+        top: 0px;
+        background-color: white;
         z-index: 100;
-        color: white;
+        
     }
     .slider-wapper {
         width: 100%;
@@ -53,10 +53,12 @@
     .hide-on-mobile {
         display: none;
     }
-
+#header-bottom {
+    top: 0px;
+}
 #slider-home {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 139px;
 }
 .slider-page-facebook-left {
     margin-left: 0;
