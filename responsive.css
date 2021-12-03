@@ -58,12 +58,24 @@
     div[id] {
         scroll-margin-top: 280px;
     }
+    
 }
+
+
 
 /* Mobile */
 @media (max-width: 739px) {
     .hide-on-mobile {
         display: none;
+        
+    }
+    .product-date-body {
+        padding: 0 20px;
+    }
+    .product-other-text, .product-details {
+        text-decoration: underline var(--primary-color) 3px;
+        font-size: 1.3rem;
+        
     }
 #header-bottom {
     top: 0px;
