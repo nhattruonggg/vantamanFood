@@ -169,6 +169,7 @@ div[id] {
 
 .header-bottom-search select {
     border-style: none;
+    outline: none;
 }
 
 .header-bottom-search-line {
@@ -183,6 +184,7 @@ div[id] {
 }
 .header-bottom-search-input {
     border-style: none;
+    outline: none;
     padding-left: 20px;
 }
 
@@ -334,7 +336,7 @@ div[id] {
 
 .cart-icon i {
     line-height: 60px;
-    padding: 0 10px;
+    padding: 0 35px;
     width: 100%;
     display: block;
     color: var(--white-color);
